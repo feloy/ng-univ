@@ -1,4 +1,4 @@
-Start service side rendering: 
+Start server side rendering: 
 
 ``` 
 $ ./node_modules/.bin/ngc
