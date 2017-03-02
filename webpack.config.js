@@ -5,8 +5,8 @@ module.exports = {
 		main: './src/main.server.ts'
 	},
 	resolve: {
-      extensions: ['.ts', '.js']
-    },
+		extensions: ['.ts', '.js']
+	},
 	target: 'node',
 	output: {
 		path: 'dist',
@@ -20,9 +20,14 @@ module.exports = {
 	module: {
 		rules: [
 			{
-              test: /\.ts$/,
-              loader: '@ngtools/webpack',
-            }
+				test: /\.ts$/,
+				loaders: ['@ngtools/webpack', 'angular2-template-loader'],
+			},
+			/* Embed files. */
+			{
+				test: /\.(html|css)$/,
+				loader: 'raw-loader'
+			}
 		]
 	}
 }
