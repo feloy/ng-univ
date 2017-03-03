@@ -1,6 +1,8 @@
 Install:
 
+```
 $ npm install 
+```
 
 Start server side rendering: 
 
