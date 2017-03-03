@@ -1,2 +1,3 @@
-h1 { color: red; 
-}
+@import '../../node_modules/@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+
+h1 { color: red; }

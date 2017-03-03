@@ -3,6 +3,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { MdToolbarModule } from '@angular/material/toolbar';
+import { MdListModule } from '@angular/material/list';
+import { MdIconModule } from '@angular/material/icon';
+import { MdCardModule } from '@angular/material/card';
+
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -11,8 +16,14 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule.withServerTransition({
-			appId: 'universal-demo-app'
-		}),
+      appId: 'universal-demo-app'
+    }),
+
+    MdToolbarModule.forRoot(),
+    MdListModule.forRoot(),
+    MdIconModule.forRoot(),
+    MdCardModule.forRoot(),
+
     FormsModule,
     HttpModule
   ],
